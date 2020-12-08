@@ -1,9 +1,33 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-dark bg-primary">
-      <span className="navbar-brand mb-0 h1">Navbar</span>
+    <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+      <Link className="navbar-brand" to="/summoner">
+        LoL App
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <NavLink className="nav-link" to="/">
+            Summoner
+          </NavLink>
+          <NavLink className="nav-link " to="/champions" id="champions">
+            Champions
+          </NavLink>
+        </div>
+      </div>
     </nav>
   );
 }

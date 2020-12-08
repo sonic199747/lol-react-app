@@ -1,3 +1,3 @@
 module.exports = {
-  api_key: "RGAPI-6f60524c-bfa2-47e0-b7a5-4e02d628156a",
+  api_key: "RGAPI-b391d465-de5e-49c9-aac4-a11a0cf8fd78",
 };

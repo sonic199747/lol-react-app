@@ -7,5 +7,6 @@ var port = process.env.PORT || 4000;
 
 require("./Routes/mastery")(app);
 require("./Routes/user")(app);
+require("./Routes/champion")(app);
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
